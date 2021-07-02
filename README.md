@@ -11,7 +11,7 @@ love your vim ... notes from session on love with vim , Part 1 - happened on 7/1
 1. `wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 1. Open vim : `vim` - from terminal
 1. Execute the command `:PlugInstall`  from `command` mode to install all plugins
-1. Enjoy :)
+1. Restart vim & Enjoy :)
 
 * Incase of any PuTTY like client used to access the shell, use a friendly font:
 	- [DejaVuSansMono NerdFontMono](https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.ttf)

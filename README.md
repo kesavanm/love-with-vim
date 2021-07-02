@@ -1,4 +1,4 @@
-# love-with-vim
+# <font color=red>♡</font>-w/-`vim`
 love your vim ... notes from session on love with vim , Part 1 - happened on 7/1
 
 ### Installation

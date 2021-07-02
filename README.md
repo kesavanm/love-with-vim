@@ -1,6 +1,10 @@
 # <font color=red>♡</font>-w/-`vim`
 love your vim ... notes from session on love with vim , Part 1 - happened on 7/1
 
+### Demo
+![image](https://user-images.githubusercontent.com/1879445/124226927-79b62e00-dacf-11eb-96e9-35c49d688fc0.png)
+
+
 ### Installation
 
 1. Copy this `.vimrc` to your `$HOME` on the `GNU/Linux`

@@ -1,5 +1,6 @@
 # <font color=red>♡</font>-w/-`vim`
-love your vim ... notes from session on love with vim , Part 1 - happened on 7/1
+**love your vim♡ !** Notes & `.vimrc` from session on love with vim! Session notes avail at http://kesavan.info/books.pl. Search for `love vim pdf`
+
 
 ### Demo
 ![image](https://user-images.githubusercontent.com/1879445/124226927-79b62e00-dacf-11eb-96e9-35c49d688fc0.png)
@@ -20,4 +21,4 @@ love your vim ... notes from session on love with vim , Part 1 - happened on 7/1
 
 ### Commands
 * For gaming : `:VimGame...`
-* Rest - recall our session
+* Rest - follow the exercise & notes from the above pdf

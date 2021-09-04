@@ -167,12 +167,14 @@ let g:bookmark_sign = '♥'
 hi ColorColumn ctermbg=lightcyan guibg=blue
 
 set tabpagemax=99
+set hidden	"disable E37: No write since last change when buffer move (:e )	
+autocmd BufWritePost * if &diff | diffupdate | endif "source .vimrc after save 
 
 "------------------------   WSL troubleshooting  --------------------
 " use PuTTY or stable client to connect
 " issue #1 - arrow keys produce ABCD 
 " 	fix : export TERM=xterm
-
+"--------------------------------------------------------------------
 " issue #2 - startup in REPLACE mode --------------------------------
 " 	fix : ✗ 1 - try reset ambw - it'll break powerline
 " 	fix : ✓ 2 - set noek if xterm-256 colors

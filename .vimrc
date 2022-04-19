@@ -69,6 +69,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/fzf.vim'			" FzF <3 vim
 	Plug 'junegunn/fzf',{ 'do': { -> fzf#install() } } " FzF <3 vim
 
+	Plug 'altercation/vim-colors-solarized'
+	Plug 'fneu/breezy'
 call plug#end()
 
 " ___________session #4 
@@ -85,6 +87,8 @@ set colorcolumn=80			" never cross border
 "set guifont=DejaVu\ Sans\ Mono:h9	" for native terminal
 					" for PuTTY DejaVuSansMonoForPowerline
 					" DejaVuSansMonoNerdFontCompleteMono
+set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT	" Win10 GVIM
+					" Remember the hack! "<REG_ID>p
 "set background=dark
 "set termguicolors			" DANGER, this kills my term
 

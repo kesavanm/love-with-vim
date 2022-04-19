@@ -89,6 +89,8 @@ set colorcolumn=80			" never cross border
 					" DejaVuSansMonoNerdFontCompleteMono
 set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT	" Win10 GVIM
 					" Remember the hack! "<REG_ID>p
+					"#1 :redir @x|se guifont|redir END
+					"#2 "xp
 "set background=dark
 "set termguicolors			" DANGER, this kills my term
 

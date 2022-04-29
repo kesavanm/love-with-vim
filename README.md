@@ -6,7 +6,7 @@
 ![image](https://user-images.githubusercontent.com/1879445/124226927-79b62e00-dacf-11eb-96e9-35c49d688fc0.png)
 
 
-### Installation - Gnu/Linux
+### Installation - Gnu/Linux - Terminal mode
 
 1. Copy this `.vimrc` to your `$HOME` on the `GNU/Linux`
 1. `mkdir -p ~/.vim/autoload  ~/.vim/tmp ~/.vim/undo-dir`
@@ -17,20 +17,20 @@
 1. Execute the command `:PlugInstall`  from `command` mode to install all plugins
 1. Restart vim & Enjoy :)
 
-### Installation - Windows
+### Installation - Windows - Graphical mode
 
 1. Copy this `.vimrc` to your `%userprofile%` on the `Windows` [ex: C:\Users\einstein]
 1. Install Git:  `winget install --id Git.Git -e --source winget` ![image](https://user-images.githubusercontent.com/1879445/147502821-f0cbf96a-9eb7-4fb0-989b-d1ffacd2d498.png)
-
 1. Goto `vim`'s `autoload` folder and get the `plug.vim` as mentioned above.
-1. Also create  ~/.vim/tmp ~/.vim/undo-dir`
-1. Open gVim 
+1. Also create  `~/.vim/tmp ~/.vim/undo-dir`
+1. Open `gVim`
 1. Execute the command `:PlugInstall`  from `command` mode to install all plugins
-1. Restart vim & Enjoy :)
+1. Restart `gvim` & Enjoy :)
 
-
-* Use a friendly mono font:
-	- [DejaVuSansMono NerdFontMono](https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.ttf)
+### Tips
+* Use a friendly mono font: [Droid Sans Mono Nerd Font Complete](https://example.com) or [DejaVuSansMono NerdFontMono](https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.ttf)
+* Have `fzf`, `git` pre installed & $PATH config done. Refer the `.vimrc`
+* Also have alternative tools avail for enriched experience - [`Tabby`](https://tabby.com) on Windows
 
 ### Commands
 * For gaming : `:VimGame...`
@@ -82,6 +82,9 @@
 
 `session commands will you help organize a project and keep project level settings`
 
-
-
-
+### summary - clips/registers
+|#|area |purpose/action|mode| command|short-form | short-cut key com
+|---|---|---|---|---|---|--|                                         
+|1| registers |show register aka clipboard contents | normal		| `:registers`  | `:reg` | `"`|
+|2| registers | yank (copy) into register named `T`		| normal  | `"` `T` `y` | |`"` `T` `y`|
+|3| registers | paste from register named `T`		| normal  | `"` `T` `p` | |`"` `T` `p`|

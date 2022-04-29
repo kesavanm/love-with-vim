@@ -1,22 +1,22 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "   auth: kesavan muthuvel
 "   bugs: hi@kesavan.info
-"   date: 2021-07-01 
+"   date: 2021-07-01
 "   *****************************
 "    ✔  1 basic .vimrc
 "    ✔  2 DejaVuSansMono font & ui
 "    ✔  3 layout [tab,windows]
 "    ✔  4 tmp dirs
-"    ✔  5 restore previous session 
+"    ✔  5 restore previous session
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "key stuff
 
-" smile 
-" ___________session #1 
+" smile
+" ___________session #1
 set number
 
-" ___________session #2 
+" ___________session #2
 set nocompatible        " use vim defaults (much better!)
 syntax on           " turning on syntax
 set history=500
@@ -41,14 +41,14 @@ filetype indent on
 
 set directory=~/.vim/tmp
 set laststatus=2                " always a status line
-set undofile 
+set undofile
 set undodir=~/.vim/undo-dir " TIME-TRAVEL
 
 " stop insert asap
 autocmd VimEnter * stopinsert
 set noinsertmode
 
-" ___________session #3 
+" ___________session #3
 call plug#begin('~/.vim/plugged')
     Plug 'johngrib/vim-game-snake'      " 90kids game
     Plug 'johngrib/vim-game-code-break'
@@ -77,7 +77,10 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-" ___________session #4 
+" fix for the fzf/bash path issue on Windows
+let $PATH = $HOME."\\tools\\PortableGit\\usr\\bin;" . $PATH
+
+" ___________session #4
 set mouse=a             " set mouse automatic; vim♡mouse
 set ttymouse=sgr            " use for scrolling too; xterm[2]
 
@@ -111,7 +114,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_section_b = '%{getcwd()}'
 "TABLINE:
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#tabs_label = 'tabs'       
+let g:airline#extensions#tabline#tabs_label = 'tabs'
 let g:airline#extensions#tabline#buffers_label = 'buffers'
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#show_tab_count = 1
@@ -162,7 +165,7 @@ highlight DiffAdd    cterm=BOLD ctermfg=NONE ctermbg=22
 highlight DiffDelete cterm=BOLD ctermfg=NONE ctermbg=52
 highlight DiffChange cterm=BOLD ctermfg=NONE ctermbg=23
 highlight DiffText   cterm=BOLD ctermfg=NONE ctermbg=23
- 
+
 " ----------------- custom shortcuts ---------------------------
 " buffer navigation
 " Ctrl Left/h & Right/l cycle between buffers
@@ -185,11 +188,11 @@ hi ColorColumn ctermbg=lightcyan guibg=blue
 
 set tabpagemax=99
 set hidden  "disable E37: No write since last change when buffer move (:e )
-autocmd BufWritePost * if &diff | diffupdate | endif "source .vimrc after save 
+autocmd BufWritePost * if &diff | diffupdate | endif "source .vimrc after save
 
 "------------------------   WSL troubleshooting  --------------------
 " use PuTTY or stable client to connect
-" issue #1 - arrow keys produce ABCD 
+" issue #1 - arrow keys produce ABCD
 "   fix : export TERM=xterm
 "--------------------------------------------------------------------
 " issue #2 - startup in REPLACE mode --------------------------------

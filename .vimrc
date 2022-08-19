@@ -34,6 +34,7 @@ set enc=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf8,prc
 set paste
+set wildmenu
 
 filetype on
 filetype plugin on
@@ -95,7 +96,8 @@ set colorcolumn=80          " never cross border
                     " for PuTTY DejaVuSansMonoForPowerline
                     " DejaVuSansMonoNerdFontCompleteMono
 "set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT    " verified - gVim on Win10
-set guifont=DroidSansMono_Nerd_Font:h12:cANSI:qDRAFT    " author's choice gVim on Win10
+"set guifont=DroidSansMono_Nerd_Font:h12:cANSI:qDRAFT    " author's choice gVim on Win10
+set guifont=DroidSansMono_Nerd_Font_Mono:h9:cANSI:qDRAFT    " author's choice gVim on Win10
 set guioptions=gmrLtTe      " gVIM - tab mode
                     " Remember the hack! "<REG_ID>p
                     "#1 :redir @x|se guifont|redir END

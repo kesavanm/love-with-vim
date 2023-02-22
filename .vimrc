@@ -97,7 +97,7 @@ set colorcolumn=80          " never cross border
                     " DejaVuSansMonoNerdFontCompleteMono
 "set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI:qDRAFT    " verified - gVim on Win10
 "set guifont=DroidSansMono_Nerd_Font:h12:cANSI:qDRAFT    " author's choice gVim on Win10
-set guifont=DroidSansMono_Nerd_Font_Mono:h9:cANSI:qDRAFT    " author's choice gVim on Win10
+set guifont=DroidSansMono_Nerd_Font_Mono:h12:cANSI:qDRAFT    " author's 2nd
 set guioptions=gmrLtTe      " gVIM - tab mode
                     " Remember the hack! "<REG_ID>p
                     "#1 :redir @x|se guifont|redir END

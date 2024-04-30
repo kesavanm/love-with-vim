@@ -182,6 +182,9 @@ nnoremap <F3> :Bsgrep
 let mapleader = "\<Space>"
 noremap <silent> <Leader>n :NERDTreeToggle<CR>
 
+"custom Alias
+command Vterminal vertical belowright terminal
+
 set omnifunc=syntaxcomplete#Complete
 
 let g:bookmark_sign = '♥'

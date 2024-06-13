@@ -73,8 +73,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'altercation/vim-colors-solarized'
     Plug 'fneu/breezy'
     Plug 'mhinz/vim-startify'
+    Plug 'sotte/presenting.vim'         " present your md
     Plug 'pechorin/any-jump.vim'    " under r-n-d
-
 
 call plug#end()
 

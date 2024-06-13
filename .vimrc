@@ -74,7 +74,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'fneu/breezy'
     Plug 'mhinz/vim-startify'
     Plug 'sotte/presenting.vim'         " present your md
-    Plug 'pechorin/any-jump.vim'    " under r-n-d
+
+    if has('popupwin')
+        Plug 'pechorin/any-jump.vim'    	" under r-n-d
+    endif
 
 call plug#end()
 
